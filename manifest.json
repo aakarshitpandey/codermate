@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+    "version": "1.0.0",
+    "name": "Aakarshit Pandey",
+    "description": "Test extension",
+    "browser_action": {
+        "default_icon": "logo.png",
+        "default_title": "Have a good day"
+    },
+    "chrome_url_overrides": {
+        "newtab": "newtab.html"
+    },
+    "permissions": [
+        "activeTab",
+        "storage"
+    ],
+    "content_security_policy": "script-src 'self' https://use.fontawesome.com/c75d791b99.js https://code.jquery.com/jquery-3.5.1.slim.min.js https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js; object-src 'self'"
+}

@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@700&display=swap');
+
+body {
+    background-color: #222222;
+
+    /* text-shadow: 0.5px 0.5px #000000; */
+    font-family: 'Nanum Gothic Coding', monospace;
+
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 2s ease-in-out;
+
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+
+    height: 100vh;
+    overflow: visible;
+}
+
+input {
+    font-size: 1.5em;
+    background: none !important;
+    color: white;
+    min-width: 250px;
+    border: 0px;
+}
+
+input:focus {
+    color: white;
+    box-shadow: 0px 1px 0px 0px white;
+    outline: none;
+}
+
+i {
+    font-size: 1.5em;
+}
+
+input::placeholder {
+    color: rgba(245, 245, 245, 0.521) !important;
+}
+
+.input-group .mb3 {
+    background: none;
+}
+
+.heading {
+    vertical-align: middle;
+    text-shadow: 5px 5px #000000;
+    text-align: center;
+    width: 100%;
+    font-size: 8rem;
+}
+
+#time {
+    text-shadow: 2px 2px #000000;
+    text-align: center;
+    width: 100%;
+    font-size: 2.5rem;
+}
+
+.input-group-prepend {
+    background-color: rgba(0, 0, 0, 0,5);
+}
+
+.level-1 {
+    min-height: 20%;
+    flex-shrink: 1;
+    flex-grow: 0;
+    flex-basis: auto;
+}
+
+.level-3 {
+    display: inline-flex;
+    flex: 1;
+    margin-right: 20px;
+    justify-content: flex-end;
+    justify-content: space-between;
+    height: auto;
+    overflow: hidden;
+}
+
+.news {
+    background: rgba(0, 0, 0, 0.5);
+    margin-bottom: 5px;
+}
+
+.dev-news {
+    max-width: 25%;
+    width: auto;
+    margin-left: 30px;
+    margin-top: 30px;
+    /* max-height: 45vh; */
+    /* height: 100%; */
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+
+    overflow-y: scroll;
+    flex: 1;
+}
+
+.question {
+    background: rgba(0, 0, 0, 0.5);
+    margin-bottom: 5px;
+}
+
+.top-questions {
+    max-width: 25rem;
+    margin-left: 30px;
+    margin-top: 30px;
+    /* max-height: 45vh; */
+    /* height: 100%; added */
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+
+    overflow-y: scroll;
+    flex: 1;
+}
+
+#author-name a {
+    text-decoration: none;
+    color: white;
+}
+
+#author-name a:hover {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* .top-questions::-webkit-scrollbar {
+    /* width: 4px;
+} */
+
+.main-container {
+    height: 100vh;
+    display: flex; /*added*/
+    flex-direction: column; /*added*/
+}
+
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+     } 
+} 
