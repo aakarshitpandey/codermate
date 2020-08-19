@@ -7,7 +7,7 @@ const setBackground = (res) => {
         console.log('loaded')
         document.body.style.background = `url(${img.src})`
     }
-    img.src = `${res.urls.raw}?auto=format`
+    img.src = `${res.urls.raw}?auto=format&w=${window.innerWidth}`
 }
 
 const setAuthorName = (res) => {
